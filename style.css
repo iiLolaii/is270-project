@@ -6,8 +6,36 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 
 .image-width {
     max-width: 800px;
+}
+
+.lola-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-row {
+    display: flex;
+    gap: 50px;
+
+    img {
+        max-width: 350px;
+    }
+}
+
+
+.hover-image {
+    background-image: url("./images/bunny.jpg");
+    transition: opacity .2s;
+    background-size: cover;
+    width: 350px;
+}
+
+.hover-image:hover {
+    background-image: url("./images/bunny-close.jpg");
 }
